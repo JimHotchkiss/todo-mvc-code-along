@@ -58,4 +58,5 @@ LinkController
   * So we need to modify routes.rb
   * Draw a route to the controller/action
   * This should render a show page
-  
+
+### Okay, pausing video @ 26:49. List.all on the lists/index page. 
