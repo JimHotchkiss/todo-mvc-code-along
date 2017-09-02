@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :lists
   get 'site/index'
 
-  root 'site#index'
+  root 'lists#index'
   # site controller, can be augmented later
 
 

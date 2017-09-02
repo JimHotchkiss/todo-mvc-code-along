@@ -1,0 +1,22 @@
+<section class="todoapp">
+	<header class="header">
+		<h1>Your Lists</h1>
+		<input class="new-todo" placeholder="What needs to be done?" autofocus="">
+	</header>
+
+  <section class="main">
+		<ul class="todo-list">
+			<% @lists.each do |list| %>
+			<li>
+        <div class="view">
+          <label><a href="#"><%= list.name %></label></a>
+        </div>
+      </li>
+			
+			<% end %>
+    </ul>
+	</section>
+
+  <footer class="footer">
+	</footer>
+</section>

@@ -9,6 +9,14 @@
   * routes.rb -> root 'site#index' (throws an error 'no controller')
   * Generate controller -> 'rails generate controller (called) site (with an) index (action)'
    ~ rails generate controller index
+
+   def index
+     # implicit rendering
+     # render 'site/index'
+     # render 'controller/action'
+     # app/viedws/site -> index.html.erb
+   end
+
 ! We now see that our css code has been applied to the root page
 
 # So we've taken the html code, and made copied it to our layouts/application.html.erb.  Where we replaced the <% yield %> with the html code.  Now our root page has the style we want.  However, at this point it is dead.
@@ -39,3 +47,15 @@ LinkController
   * This also made a controller called lists_controller.rb
   * This made a views/lists folder
   * And in routes.rb a resources :lists
+!! Migrate the database immediately
+> rake db:migrate
+  * Test by rails console and create the object (list)
+# Now I want to change my routes, and change sites#index -> lists#index
+!! Now I want to 'rails destroy controller site' -> don't need this controller
+# Now I want to go to the lists folder and stub out an index view
+
+# Now we want to make these links real.  
+  * So we need to modify routes.rb
+  * Draw a route to the controller/action
+  * This should render a show page
+  
