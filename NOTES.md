@@ -64,3 +64,12 @@ LinkController
 # Now, we want to make a show page, and make the links from the index page real.  
   * Need a new URL -> routes.rb /lists/1
   * link_to rails helper method to create linkcs
+    ~ list_path(list) -> returns an object that is the url path
+    ~ Need to create lists#show action
+    ~ Now make a new views/lists/show.html
+      * This is where we want to add items to our list. For example, if user clicks on 'shopping lists', they will be taken to the show.html, and there they can add items to their shopping lists.  
+# So, on the show page we stubbed out some functionality, and now we want to make it real.
+  ~ Start with the <h1>Shopping List</h1> -> @list.name
+    * The html looks like shit, and I don't know why.  However, I'm not going spend time debugging the css or html.
+# Now we're going to build out a form_for on the indedx page
+# Build private controller called 'object'_params.
