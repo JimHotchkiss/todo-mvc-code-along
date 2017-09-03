@@ -1,7 +1,10 @@
 <section class="todoapp">
 	<header class="header">
 		<h1>Your Lists</h1>
-		<input class="new-todo" placeholder="What needs to be done?" autofocus="">
+		<%= form_for (@list) do |f|%>
+			<%= f.text_field :name, :class => "new-todo" %>
+
+		<% end %>
 	</header>
 
   <section class="main">
@@ -12,7 +15,7 @@
           <label><%= link_to list.name, list_path(list) %></label>
         </div>
       </li>
-			
+
 			<% end %>
     </ul>
 	</section>
