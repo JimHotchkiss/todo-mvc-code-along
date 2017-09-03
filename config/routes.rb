@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :lists
-  get 'site/index'
+# RESTful convention in rails that generates the seven RESTful routes
+# > rake routes 
 
   root 'lists#index'
   # site controller, can be augmented later

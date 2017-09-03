@@ -59,4 +59,8 @@ LinkController
   * Draw a route to the controller/action
   * This should render a show page
 
-### Okay, pausing video @ 26:49. List.all on the lists/index page. 
+### Okay, pausing video @ 26:49. List.all on the lists/index page.
+
+# Now, we want to make a show page, and make the links from the index page real.  
+  * Need a new URL -> routes.rb /lists/1
+  * link_to rails helper method to create linkcs
